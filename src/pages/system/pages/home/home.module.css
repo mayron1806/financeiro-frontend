@@ -1,0 +1,5 @@
+/* CARDS */
+.cards{
+  display: flex;
+  gap: 4rem;
+}
