@@ -9,7 +9,8 @@ function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
-        <Routes>
+        <Routes> 
+          <Route path='/' element={<SignIn />}/>
           <Route path='/signin' element={<SignIn />}/>
           <Route path='/signup' element={<SignUp/>}/>
           <Route path='/:tab' element={<PageProtector><System /></PageProtector>}/>
