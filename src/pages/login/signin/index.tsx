@@ -1,6 +1,6 @@
 import { Dispatch, FormEvent, useEffect, useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Submit from "../../../components/submit";
 import useAuth from "../../../hooks/useAuth";
 
@@ -82,7 +82,7 @@ const SignIn = () => {
           }
           <Submit value="Entrar"/>
         </form>
-        <p className={styles.link}>Ainda não tem uma conta? <a href="/signup">Criar agora</a></p>
+        <p className={styles.link}>Ainda não tem uma conta? <Link to="/signup">Criar agora</Link></p>
       </main>
     </div>
   )

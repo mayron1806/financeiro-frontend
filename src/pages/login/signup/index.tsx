@@ -2,7 +2,7 @@ import React, { Dispatch, FormEvent, useEffect, useState } from "react";
 import Submit from "../../../components/submit";
 import {AiOutlineEyeInvisible, AiOutlineEye} from "react-icons/ai";
 import styles from "../auth.module.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 
 const SignUp = () => {
@@ -96,7 +96,7 @@ const SignUp = () => {
           }
           <Submit value="Criar conta"/>
         </form>
-        <p className={styles.link}>Já possui uma conta? <a href="/signin">Entrar</a></p>
+        <p className={styles.link}>Já possui uma conta? <Link to="/signin">Entrar</Link></p>
       </main>
     </div>
   )
